@@ -70,7 +70,7 @@ public class SAMLParser {
         }
         
                 
-      //SIGNATURE VERIFIATION 
+      //SIGNATURE VERIFICATION 
         System.out.println("Public key to verify signature ?"+assestions.get(0).getSignature().getKeyInfo().getX509Datas().get(0).getX509Certificates().get(0));
         
         final org.opensaml.xmlsec.signature.X509Certificate certInSaml = assertion.getSignature().getKeyInfo().getX509Datas().get(0).getX509Certificates().get(0);
